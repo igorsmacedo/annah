@@ -1,0 +1,391 @@
+
+/*-------------Geral---------------*/
+
+@font-face {
+    font-family: "arial";
+    src: url(../fonts/arial.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "ITCAvantGardeStd";
+    src: url(../fonts/ITCAvantGardeStd-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Light.ttf);
+    font-weight: 300;
+}
+
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular_0.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Bold_0.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "WorkSans";
+    src: url(../fonts/WorkSans-Black.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: "WorkSans";
+    src: url(../fonts/WorkSans-ExtraBold.ttf);
+    font-weight: 800;
+}
+@font-face {
+    font-family: "WorkSans";
+    src: url(../fonts/WorkSans-Light.ttf);
+    font-weight: 100;
+}
+@font-face {
+    font-family: "WorkSans";
+    src: url(../fonts/WorkSans-SemiBold.ttf);
+    font-weight: 300;
+}
+
+body {
+    font-family: "Montserrat";
+    overflow-x: hidden;
+    background-color: #F1F1F1;
+    color: white;
+    font-size: 14px;
+
+}
+
+#content {
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 55px;
+}
+
+.btn-primary {
+    background-color: black;
+    color: #D2AE6D;
+    font-size: 14px;
+    border:none;
+    padding: 5px 15px;
+}
+
+.sombra {
+    box-shadow: 0 0 1em rgb(0 0 0 / 20%);
+}
+
+/*------------Header-------------*/
+
+header {
+    width: 100%;
+    font-size: 14px;
+    background-color: #19191A;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    box-shadow: 0px 12px 11px -3px rgb(0 0 0 / 20%);
+}
+
+
+#navbarTogglerDemo02 a.nav-link {
+    color: white;
+    font-family: 'Montserrat';
+}
+
+.bg-light {
+    background-color: #19191A !important;
+}
+
+
+/* Conteúdo banner*/
+
+
+#wrapper-titulos {
+    max-width: 400px; 
+    font-size: xx-large;
+    text-transform: uppercase;
+    position: absolute;
+    left: 150px;
+    top: 30%;
+}
+
+.marca {
+    text-transform: lowercase;
+    font-size: 0.5em;
+    font-weight: bold;
+    font-family: 'ITCAvantGardeStd';
+    letter-spacing: 2px;
+}
+
+#titulo-principal {
+    font-family: 'WorkSans';
+    font-weight: lighter;
+    color: #D2AE6D;
+    margin-bottom: 0;;
+}
+
+#titulo-secundario {
+    font-weight: bold;
+}
+/* Conteúdo conhecer-melhor*/
+
+#wrapper-conhecer-melhor {
+    padding-top: 80px;
+    margin: auto;
+    background-color: #19191A;
+    padding-bottom: 80px;
+}
+
+#wrapper-conhecer-melhor .titulo {
+    color: #FFE590;
+    font-family: 'WorkSans';
+    font-weight: bolder;
+    font-size: xx-large;
+    line-height: 40px;
+}
+
+#wrapper-conhecer-melhor .titulo-secundario {
+    color:white
+}
+
+#wrapper-conhecer-melhor .detalhes {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Conteúdo projetos-experiencias */
+
+#wrapper-projetos-experiencias {
+    padding-top: 180px;
+    color: black;
+    background-color: white;
+    padding-bottom: 60px;
+}
+
+.numeros-relevantes p {
+    font-size: 19px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    line-height: 19px;
+}
+
+#wrapper-projetos-experiencias .titulo {
+    color: #19191A;
+    font-family: 'WorkSans';
+    font-weight: 200;
+    font-size: 32px;
+    margin-bottom: 0;;
+}
+
+#wrapper-projetos-experiencias .subtitulo {
+     /* Fallback: Set a background color. */
+  background-color: red;
+  
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #D2AE6D, #c4355e);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  font-family: 'WorkSans';
+  font-weight: 800;
+  font-size: 32px;
+}
+
+.separador-evento,
+.projetos-experiencias-separador {
+    background: linear-gradient(to right,#b1922e, #f5ea57); 
+    height: 3px;
+    max-width: 80px;
+}
+
+
+/* Conteúdo videos-podcasts */
+
+#wrapper-videos-podcasts {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    min-height: 400px;
+    background-color: #F2F1F0;
+    color:black
+}
+
+#wrapper-videos-podcasts .titulo {
+    font-size: 36px;
+    margin-bottom: 0;
+    line-height: 36px;
+    font-family: 'WorkSans';
+    font-weight: bold;
+}
+
+#wrapper-videos-podcasts .descricao {
+    margin-top: 25px;
+}
+
+#carouselExampleIndicators3 {
+    margin-top: 25px;
+}
+
+/* Conteúdo Mídia */
+#wrapper-midia {
+    margin-bottom: 50px;
+    color:black
+}
+
+.wrapper-midia-item {
+    position: relative;
+    min-height: 150px;
+}
+.vertical-center {
+    padding: 20px;
+    margin: auto;
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+
+/* Conteúdo Agenda */
+
+#wrapper-agenda {
+    color: black;
+    font-family: 'WorkSans';
+}
+
+#wrapper-agenda .mes {
+    color: #B67034;
+}
+
+.data-evento {
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+p.evento-info {
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 18px;
+}
+
+.local-data {
+    margin-bottom: 10px;
+}
+
+#wrapper-agenda .informacoes-titulo {
+    font-size: 36px;
+}
+
+.wrapper-agenda-item {
+    position: relative;
+}
+.agenda-divisor {
+    right: 10%;
+    width: 1px;
+    border-left: 3px solid black;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+/* Conteúdo wrapper-blog-eventos  */
+#wrapper-blog-eventos {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: white;
+    background-color: #19191A;
+    font-family: 'WorkSans';
+    min-height: 290px;
+}
+
+#wrapper-eventos {
+    position: absolute;
+    color: black;
+    width: 100%;
+}
+
+.infos-principais {
+    margin-top: 20px;
+}
+.infos-principais .titulo-secundario,
+.infos-principais .titulo {
+    margin-bottom: 0;
+}
+
+.infos-principais .titulo {
+    color: #D2AE6D
+}
+
+.wrapper-btn-evento {
+    position: absolute; 
+    left: 8px; 
+    bottom: 8px;
+}
+
+.evento-item {
+    position: relative;
+}
+
+
+/* Conteúdo wrapper-ebooks */
+
+#wrapper-ebooks {
+    font-family: 'WorkSans';
+    padding-top: 60px;
+    padding-bottom: 25px;
+    margin-top: 250px;
+}
+
+
+/* Conteúdo newsletter */
+
+#wrapper-newsletter {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    color:black;
+}
+
+
+
+
+/*--------------Rodape--------------*/
+
+
+
+
+
+@media (max-width: 767px) {
+    
+}
+
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1100px;
+    }
+}
