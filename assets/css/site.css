@@ -63,13 +63,12 @@ body {
     background-color: #F1F1F1;
     color: white;
     font-size: 14px;
-
 }
 
 #content {
-    width: 100%;
     margin-bottom: 40px;
     margin-top: 55px;
+    overflow: hidden;
 }
 
 .btn-primary {
@@ -77,11 +76,20 @@ body {
     color: #D2AE6D;
     font-size: 14px;
     border:none;
-    padding: 5px 15px;
+    padding: 10px 10px;
+    border-radius: 3px;
 }
 
 .sombra {
     box-shadow: 0 0 1em rgb(0 0 0 / 20%);
+}
+
+.list-inline-item {
+    margin-right: 0 !important;
+}
+.social-midia-itens {
+    font-size: 16px; 
+    margin-top: 15px;
 }
 
 /*------------Header-------------*/
@@ -106,17 +114,24 @@ header {
     background-color: #19191A !important;
 }
 
+.dropdown-menu[data-bs-popper] {
+    left: auto;
+    margin-top: 0;
+}
+
 
 /* Conteúdo banner*/
 
 
-#wrapper-titulos {
-    max-width: 400px; 
-    font-size: xx-large;
+.wrapper-titulos {
+    font-size: 3.3em;
     text-transform: uppercase;
     position: absolute;
-    left: 150px;
-    top: 30%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 20%;
+    padding: 20px;
 }
 
 .marca {
@@ -127,11 +142,12 @@ header {
     letter-spacing: 2px;
 }
 
-#titulo-principal {
+.titulo-principal {
     font-family: 'WorkSans';
     font-weight: lighter;
     color: #D2AE6D;
-    margin-bottom: 0;;
+    margin-bottom: 0;
+    line-height: 1.2em;
 }
 
 #titulo-secundario {
@@ -140,10 +156,8 @@ header {
 /* Conteúdo conhecer-melhor*/
 
 #wrapper-conhecer-melhor {
-    padding-top: 80px;
     margin: auto;
     background-color: #19191A;
-    padding-bottom: 80px;
 }
 
 #wrapper-conhecer-melhor .titulo {
@@ -161,6 +175,11 @@ header {
 #wrapper-conhecer-melhor .detalhes {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+#wrapper-retangulo-destaque {
+    position: relative; 
+    width: 450px;
 }
 
 
@@ -194,7 +213,7 @@ header {
   background-color: red;
   
   /* Create the gradient. */
-  background-image: linear-gradient(45deg, #D2AE6D, #c4355e);
+  background-image: linear-gradient(45deg, #B67034, #FFE590);
   
   /* Set the background size and repeat properties. */
   background-size: 100%;
@@ -213,7 +232,8 @@ header {
 
 .separador-evento,
 .projetos-experiencias-separador {
-    background: linear-gradient(to right,#b1922e, #f5ea57); 
+    /* background: linear-gradient(to right,#b1922e, #f5ea57);  */
+    background: linear-gradient(45deg, #B67034, #FFE590); 
     height: 3px;
     max-width: 80px;
 }
@@ -277,6 +297,14 @@ header {
     color: #B67034;
 }
 
+
+.wrapper-conteudo {
+    position: relative;
+}
+
+#carouselExampleIndicators4-mobile {
+    margin-top: 35px;   
+}
 .data-evento {
     font-size: 2.3rem;
     line-height: 2.5rem;
@@ -359,33 +387,150 @@ p.evento-info {
     padding-top: 60px;
     padding-bottom: 25px;
     margin-top: 250px;
+    position: relative;
+    z-index: 2;
 }
 
 
 /* Conteúdo newsletter */
 
 #wrapper-newsletter {
-    padding-top: 20px;
     padding-bottom: 20px;
-    margin-top: 40px;
     color:black;
+    position: relative;
+    z-index: 2;
 }
 
+#wrapper-newsletter .titulo {
+    margin-bottom: 0; 
+    font-family: 'WorkSans'; 
+    font-weight: bold;
+      /* Fallback: Set a background color. */
+  background-color: red;
+  
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #B67034, #FFE590);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
 
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.centralizar-conteudo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+
+  /* Conteúdo redes sociais */
+  #wrapper-menu-redes-sociais {
+    background-color: #19191A;
+    padding-top: 260px;
+    padding-bottom: 30px;
+  }
+
+  #wrapper-menu-redes-sociais .nav-link {
+    color: white;
+  }
+
+  .gold {
+      color: #D2AE6D;
+  }
 
 
 /*--------------Rodape--------------*/
 
 
+.mobile {
+    display: none;
+}
 
+.desktop {
+    display: -webkit-inline-box;
+}
 
+.padding-md {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.absolute-inherit  {
+    position: absolute;
+}
 
 @media (max-width: 767px) {
-    
+    .mobile {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+
+    #wrapper-retangulo-destaque {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: auto;
+    }
+
+    .wrapper-titulos {
+        font-size: 2.5em;
+        left: 10%;
+        bottom: 30%;
+    }
+
+    .padding-md {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .absolute-inherit {
+        position: initial;
+    }
+
+    #wrapper-projetos-experiencias {
+        padding-top: 40px;
+    }
+
+    .numeros-relevantes p {
+        font-size: 36px;
+        line-height: 34px;
+        margin-bottom: 60px;
+    }
+
+    .wrapper-conteudo {
+        min-height: 400px;
+        background-color: yellow;
+    }
+
+    .social-midia-itens {
+        text-align: center; 
+    }
+
 }
 
 @media (min-width: 1200px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl {
         max-width: 1100px;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+    .wrapper-titulos {
+        font-size: 2.1em;
+    }
+
+    #wrapper-retangulo-destaque {
+        width: 340px;
     }
 }

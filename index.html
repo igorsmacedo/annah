@@ -39,19 +39,38 @@
                                 <a class="nav-link" href="#">BUSINESS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">CONTEÚDO</a>
+                                <a class="nav-link" id="navbarConteudo" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">CONTEÚDO</a>
+
+                                <ul class="dropdown-menu" aria-labelledby="navbarConteudo" style="padding-bottom: 0;">
+                                    <li><a class="dropdown-item" href="#">EBOOKS</a></li>
+                                    <li><a class="dropdown-item" href="#">AGENDA</a></li>
+                                    <li><a class="dropdown-item" href="#">VÍDEOS</a></li>
+                                    <li><a class="dropdown-item" href="#">PODCASTS</a></li>
+                                    <li>
+                                        <div style="border:3px solid #D2AE6D; margin-top: 10px;"></div>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">EVENTOS</a>
+                                <a class="nav-link" id="navbarEventos" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">EVENTOS</a>
+
+                                <ul class="dropdown-menu" aria-labelledby="navbarEventos" style="padding-bottom: 0;">
+                                    <li><a class="dropdown-item" href="#">EVENTO 01</a></li>
+                                    <li><a class="dropdown-item" href="#">EVENTO 02</a></li>
+                                    <li><a class="dropdown-item" href="#">EVENTO 03</a></li>
+                                    <li><a class="dropdown-item" href="#">ABRIR TODOS</a></li>
+                                    <li>
+                                        <div style="border:3px solid #D2AE6D; margin-top: 10px;"></div>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">BLOG</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">CONTATO</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><span class=""></a>
                             </li>
                         </ul>
                     </form>
@@ -60,6 +79,7 @@
         </nav>
     </header>
     <div id="content">
+
         <div id="wrapper-banner">
             <div class="row">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -72,12 +92,72 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row">
-                                <img src="assets/images/banner-1.png" class="d-block w-100" alt="...">
+                                <div class="position-relative">
+                                    <img src="assets/images/banner-1.png" class="desktop img-fluid" alt="...">
+                                    <img src="assets/images/banner-1-mobile.png" class="mobile w-100" alt="...">
+                                    <div class="position-absolute">
+                                        <h1>Olá</h1>
+                                    </div>
+                                    <div class="wrapper-titulos">
+                                        <div>
+                                            <span class="marca">
+                                                annah paula freire
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <p class="titulo-principal">O sucesso é</p>
+                                            <p class="titulo-principal">uma jornada,</p>
+                                        </div>
+                                        <div>
+                                            <p id="titulo-secundario">não um destino.</p>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn-primary">VEJA MAIS
+                                                <span
+                                                    style="border: 1px solid #FFFFFF; padding: 4px 5px; margin-left: 25px; font-size: 9px; border-radius: 3px;"><i
+                                                        class="fas fa-arrow-right"></i></span>
+                                            </button>
+                                            <button type="button" class="btn-primary" style="padding: 10px 30px">
+                                                <i class="far fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="row">
-                                <img src="assets/images/banner-1.png" class="d-block w-100" alt="...">
+                                <div class="position-relative">
+                                    <img src="assets/images/banner-1.png" class="desktop img-fluid" alt="...">
+                                    <img src="assets/images/banner-1-mobile.png" class="mobile w-100" alt="...">
+                                    <div class="position-absolute">
+                                        <h1>Olá</h1>
+                                    </div>
+                                    <div class="wrapper-titulos">
+                                        <div>
+                                            <span class="marca">
+                                                annah paula freire
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <p class="titulo-principal">O sucesso é</p>
+                                            <p class="titulo-principal">uma jornada,</p>
+                                        </div>
+                                        <div>
+                                            <p id="titulo-secundario">não um destino.</p>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn-primary">VEJA MAIS
+                                                <span
+                                                    style="border: 1px solid #FFFFFF; padding: 4px 5px; margin-left: 25px; font-size: 9px; border-radius: 3px;"><i
+                                                        class="fas fa-arrow-right"></i></span>
+                                            </button>
+                                            <button type="button" class="btn-primary" style="padding: 10px 30px">
+                                                <i class="far fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -93,34 +173,13 @@
                     </button>
                 </div>
             </div>
-            <div id="wrapper-titulos">
-                <div>
-                    <span class="marca">
-                        annah paula freire
-                    </span>
-                </div>
-                <div>
-                    <p id="titulo-principal">O sucesso é uma jornada,</p>
-                </div>
-                <div>
-                    <p id="titulo-secundario">não um destino.</p>
-                </div>
-                <div>
-                    <button type="button" class="btn-primary">VEJA MAIS
-                        <span style="border: 1px solid whitesmoke; padding: 3px; margin-left: 10px; font-size: 9px;"><i
-                                class="fas fa-arrow-right"></i></span>
-                    </button>
-                    <button type="button" class="btn-primary">
-                        <i class="far fa-play"></i>
-                    </button>
-                </div>
-            </div>
         </div>
-        <div id="wrapper-conhecer-melhor">
+
+        <div id="wrapper-conhecer-melhor" class="padding-md">
             <div class="container">
                 <div class="row">
                     <div class="col-md-2 text-end">
-                        <div style="padding: 15px; margin-top: 25px;">
+                        <div style="padding: 15px; margin-top: 25px;" class="desktop">
                             <hr style="background: linear-gradient(to right,#FFE590, #d3e761); height: 5px;">
                         </div>
                     </div>
@@ -148,11 +207,41 @@
 
                 <div class="row" style="margin-top: 25px;">
                     <div class="col-md-2">
+                        <div id="wrapper-retangulo-destaque">
+                            <div style="position: absolute; z-index: 2; width: inherit; margin-top: 30px; color:black;">
+                                <div class="row">
+                                    <div class="col-md-10"
+                                        style="background-color: rgb(255, 255, 255); opacity: 0.7; padding: 20px;">
+                                        <p style="margin-bottom: 0;">Como a mentoria pode ajudar sua empresa?</p>
+                                        <h5 style="margin-bottom: 0;">MENTORIA & BUSINESS</h5>
+                                    </div>
+                                    <div class="col-md-2 text-center"
+                                        style="background-color: #FFFFFF; position: relative;">
+                                        <span class="centralizar-conteudo absolute-inherit"
+                                            style="border: 1px solid whitesmoke; padding: 3px 5px; font-size: 9px;"><i
+                                                class="fas fa-arrow-right fa-3x"></i></span>
+                                    </div>
+                                </div>
 
+                                <div class="row" style="margin-top: 20px;">
+                                    <div class="col-md-10"
+                                        style="background-color: rgb(255, 255, 255); opacity: 0.7; padding: 20px;">
+                                        <p style="margin-bottom: 0;">Aumento de confiança na execução de tarefas</p>
+                                        <h5 style="margin-bottom: 0;">BLOG DA ANNAH CONFIRA!</h5>
+                                    </div>
+                                    <div class="col-md-2 text-center"
+                                        style="background-color: #FFFFFF; position: relative;">
+                                        <span class="centralizar-conteudo absolute-inherit"
+                                            style="border: 1px solid whitesmoke; padding: 3px 5px; font-size: 9px;"><i
+                                                class="fas fa-arrow-right fa-3x"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-5">
-                        <div style="position: relative;">
-                            <div style="position: absolute; max-width: 400px;">
+                        <div class="position-relative">
+                            <div class="absolute-inherit" style="max-width: 400px; margin: auto">
                                 <img src="assets/images/annah-1.png" class="img-fluid" alt="Annah">
                             </div>
                         </div>
@@ -160,21 +249,32 @@
 
                     <div class="col-md-4" style="margin-top: 35px;">
                         <div>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            123 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
                             tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
                             nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
                             Duis
                         </div>
-                        <div>
-                            <ul>
-                                <li><a href="#"></a></li>
+                        <div class="social-midia-itens">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a class="nav-link" href="#"><i
+                                            class="fab fa-instagram gold"></i></a></li>
+                                <li class="list-inline-item"><a class="nav-link" href="#"><i
+                                            class="fab fa-facebook-f gold"></i></a></li>
+                                <li class="list-inline-item"><a class="nav-link" href="#"><i
+                                            class="fab fa-linkedin-in gold"></i></a></li>
+                                <li class="list-inline-item"><a class="nav-link" href="#"><i
+                                            class="fab fa-twitter gold"></i></a></li>
+                                <li class="list-inline-item"><a class="nav-link" href="#"><i
+                                            class="fab fa-youtube gold"></i></a></li>
+                                <li class="list-inline-item"><a class="nav-link" href="#"><i
+                                            class="fab fa-telegram-plane gold"></i></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
+
         <div id="wrapper-projetos-experiencias">
             <div class="container">
                 <div class="descricao text-center" style="margin-bottom: 40px;">
@@ -194,37 +294,47 @@
                         <div class="carousel-item active">
                             <div class="container">
                                 <div class="row numeros-relevantes">
-                                    <div class="col-md-1">
+                                    <div class="mobile">
+                                        <div class="col-md-12">
+                                            <hr class="projetos-experiencias-separador" size="1">
+                                            <p>24 anos de
+                                                arquitetura
+                                                e paisagismo</p>
+                                        </div>
                                     </div>
-                                    <div class="col-md-2">
-                                        <hr class="projetos-experiencias-separador" size="1">
-                                        <p>24 anos de
-                                            arquitetura
-                                            e paisagismo</p>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <hr class="projetos-experiencias-separador" size="1">
-                                        <p>+30 mil
-                                            reformas e
-                                            intervenções</p>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <hr class="projetos-experiencias-separador" size="1">
-                                        <p>+70 mil
-                                            adequações
-                                            estratégicas</p>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <hr class="projetos-experiencias-separador" size="1">
-                                        <p>+15 mil
-                                            transformação
-                                            no espaço</p>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <hr class="projetos-experiencias-separador" size="1">
-                                        <p>+3 mil publicações em mídias </p>
-                                    </div>
-                                    <div class="col-md-1">
+                                    <div class="desktop">
+                                        <div class="col-md-1">
+                                        </div>
+                                        <div class="col-md-2">
+                                            <hr class="projetos-experiencias-separador" size="1">
+                                            <p>24 anos de
+                                                arquitetura
+                                                e paisagismo</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <hr class="projetos-experiencias-separador" size="1">
+                                            <p>+30 mil
+                                                reformas e
+                                                intervenções</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <hr class="projetos-experiencias-separador" size="1">
+                                            <p>+70 mil
+                                                adequações
+                                                estratégicas</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <hr class="projetos-experiencias-separador" size="1">
+                                            <p>+15 mil
+                                                transformação
+                                                no espaço</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <hr class="projetos-experiencias-separador" size="1">
+                                            <p>+3 mil publicações em mídias </p>
+                                        </div>
+                                        <div class="col-md-1">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -232,9 +342,47 @@
                         <div class="carousel-item">
                             <div class="container">
                                 <div class="row numeros-relevantes">
-                                    <div class="col-md-2">
-                                        <hr class="projetos-experiencias-separador" size="1">
-                                        <p>+3 mil publicações em mídias </p>
+                                    <div class="mobile">
+                                        <div class="col-md-12">
+                                            <hr class="projetos-experiencias-separador" size="1">
+                                            <p>+30 mil
+                                                reformas e
+                                                intervenções</p>
+                                        </div>
+                                    </div>
+                                    <div class="desktop">
+                                        <div class="col-md-1">
+                                        </div>
+                                        <div class="col-md-2">
+                                            <hr class="projetos-experiencias-separador" size="1">
+                                            <p>24 anos de
+                                                arquitetura
+                                                e paisagismo</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <hr class="projetos-experiencias-separador" size="1">
+                                            <p>+30 mil
+                                                reformas e
+                                                intervenções</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <hr class="projetos-experiencias-separador" size="1">
+                                            <p>+70 mil
+                                                adequações
+                                                estratégicas</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <hr class="projetos-experiencias-separador" size="1">
+                                            <p>+15 mil
+                                                transformação
+                                                no espaço</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <hr class="projetos-experiencias-separador" size="1">
+                                            <p>+3 mil publicações em mídias </p>
+                                        </div>
+                                        <div class="col-md-1">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -253,16 +401,18 @@
                 </div>
             </div>
         </div>
+
         <div id="wrapper-videos-podcasts">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="marca">
+                        <div class="marca" style="color:#D2AE6D">
                             annah paula freire
                         </div>
                         <div>
                             <p class="titulo">Vídeos e</p>
                             <p class="titulo">podcasts</p>
+                            <hr>
                         </div>
                         <div class="descricao">
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
@@ -273,28 +423,32 @@
                     </div>
                     <div class="col-md-6">
                         <div class="row">
-                            <div class="col-md-6" style="margin-top: 50px; position: relative;">
-                                <div style="position: absolute; padding: 20px; bottom: 0; color: white;">
-                                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                                        nibh</p>
-                                    <button type="button" class="btn-primary"
-                                        style="width: 100%; position:relative; ">ESCUTAR AGORA
-                                        <span
-                                            style="border: 1px solid whitesmoke; padding: 3px 5px; right: 10px; font-size: 9px; position:absolute;"><i
-                                                class="fas fa-arrow-right"></i></span>
-                                    </button>
+                            <div class="col-md-6" style="margin-top: 50px;">
+                                <div style="width: fit-content; position: relative; margin: auto; margin-bottom: 10px;">
+                                    <img src="assets/images/annah-4.png" class="img-fluid sombra" alt="Annah">
+                                    <div style="position: absolute; padding: 20px; bottom: 0; color: white;">
+                                        <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                                            nibh</p>
+                                        <button type="button" class="btn-primary"
+                                            style="width: 100%; position:relative; padding-right: 40px;">ESCUTAR AGORA
+                                            <span
+                                                style="border: 1px solid whitesmoke; padding: 3px 5px; right: 10px; font-size: 9px; position:absolute;"><i
+                                                    class="fas fa-arrow-right"></i></span>
+                                        </button>
+                                    </div>
                                 </div>
-                                <img src="assets/images/annah-4.png" class="img-fluid sombra" alt="Annah">
                             </div>
-                            <div class="col-md-6" style="position: relative;">
-                                <div style="position:absolute; padding: 40px; bottom: 50px; color: white;">
-                                    <button type="button" class="btn-primary"
-                                        style="background-color: transparent; border: 1px solid #D2AE6D; border-radius:50%; padding:10px 15px; margin-right: 5px;">
-                                        <i class="far fa-play"></i>
-                                    </button>
-                                    VÍDEOS
+                            <div class="col-md-6">
+                                <div style="width: fit-content; position: relative; margin: auto;">
+                                    <img src="assets/images/annah-3.png" class="img-fluid sombra" alt="Annah">
+                                    <div style="position: absolute; padding: 20px; bottom: 0; color: white;">
+                                        <button type="button" class="btn-primary"
+                                            style="background-color: transparent; border: 1px solid #D2AE6D; border-radius:50%; padding:10px 15px; margin-right: 5px;">
+                                            <i class="far fa-play"></i>
+                                        </button>
+                                        VÍDEOS
+                                    </div>
                                 </div>
-                                <img src="assets/images/annah-3.png" class="img-fluid sombra" alt="Annah">
                             </div>
                         </div>
                     </div>
@@ -302,6 +456,7 @@
             </div>
             <hr style="border: 2px solid white; margin-top: 0;">
         </div>
+
         <div id="wrapper-midia">
             <div class="container">
                 <div class="row text-center">
@@ -311,7 +466,7 @@
                 </div>
 
                 <div class="row">
-                    <div id="carouselExampleIndicators3" class="carousel slide" data-bs-ride="carousel">
+                    <div id="carouselExampleIndicators3" class="carousel slide desktop" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0"
                                 class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -320,38 +475,41 @@
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-1 wrapper-midia-item">
+                                <div class="">
 
-                                        </div>
-                                        <div class="col-md-2 wrapper-midia-item">
-                                            <div class="vertical-center">
-                                                <img src="assets/images/uol.png" class="img-fluid" alt="Annah">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-1 wrapper-midia-item">
+
                                             </div>
-                                        </div>
-                                        <div class="col-md-2 wrapper-midia-item">
-                                            <div class="vertical-center">
-                                                <img src="assets/images/Logo-IG.png" class="img-fluid" alt="Annah">
+                                            <div class="col-md-2 wrapper-midia-item">
+                                                <div class="vertical-center">
+                                                    <img src="assets/images/uol.png" class="img-fluid" alt="Annah">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-2 wrapper-midia-item">
-                                            <div class="vertical-center">
-                                                <img src="assets/images/Logo-terra_secundaria_ventana-laranja_sem-slogan.png"
-                                                    class="img-fluid" alt="Annah">
+                                            <div class="col-md-2 wrapper-midia-item">
+                                                <div class="vertical-center">
+                                                    <img src="assets/images/Logo-IG.png" class="img-fluid" alt="Annah">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-2 wrapper-midia-item">
-                                            <div class="vertical-center">
-                                                <img src="assets/images/uol.png" class="img-fluid" alt="Annah">
+                                            <div class="col-md-2 wrapper-midia-item">
+                                                <div class="vertical-center">
+                                                    <img src="assets/images/Logo-terra_secundaria_ventana-laranja_sem-slogan.png"
+                                                        class="img-fluid" alt="Annah">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-2 wrapper-midia-item">
-                                            <div class="vertical-center">
-                                                <img src="assets/images/Logo-IG.png" class="img-fluid" alt="Annah">
+                                            <div class="col-md-2 wrapper-midia-item">
+                                                <div class="vertical-center">
+                                                    <img src="assets/images/uol.png" class="img-fluid" alt="Annah">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-1">
+                                            <div class="col-md-2 wrapper-midia-item">
+                                                <div class="vertical-center">
+                                                    <img src="assets/images/Logo-IG.png" class="img-fluid" alt="Annah">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-1">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -379,12 +537,65 @@
                             <span class="visually-hidden">Próximo</span>
                         </button>
                     </div>
+
+                    <div id="carouselExampleIndicators3-mobile" class="carousel slide mobile" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators3-mobile"
+                                data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators3-mobile"
+                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-6 wrapper-midia-item">
+                                            <div class="vertical-center">
+                                                <img src="assets/images/uol.png" class="img-fluid" alt="Annah">
+                                            </div>
+                                        </div>
+                                        <div class="col-6 wrapper-midia-item">
+                                            <div class="vertical-center">
+                                                <img src="assets/images/Logo-IG.png" class="img-fluid" alt="Annah">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-6 wrapper-midia-item">
+                                            <div class="vertical-center">
+                                                <img src="assets/images/Logo-terra_secundaria_ventana-laranja_sem-slogan.png"
+                                                    class="img-fluid" alt="Annah">
+                                            </div>
+                                        </div>
+                                        <div class="col-6 wrapper-midia-item">
+                                            <div class="vertical-center">
+                                                <img src="assets/images/Logo-IG.png" class="img-fluid" alt="Annah">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselExampleIndicators3-mobile" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselExampleIndicators3-mobile" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Próximo</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-
         <div id="wrapper-agenda">
-            <div style="position: relative;">
+            <div class="wrapper-conteudo">
                 <div class="container" style="position: absolute; top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);">
@@ -401,7 +612,8 @@
                         </div>
                         <div class="col-md-9">
                             <div class="row">
-                                <div id="carouselExampleIndicators4" class="carousel slide" data-bs-ride="carousel">
+                                <div id="carouselExampleIndicators4" class="carousel slide desktop"
+                                    data-bs-ride="carousel">
                                     <div class="carousel-indicators">
                                         <button type="button" data-bs-target="#carouselExampleIndicators4"
                                             data-bs-slide-to="0" class="active" aria-current="true"
@@ -492,11 +704,92 @@
                                         <span class="visually-hidden">Próximo</span>
                                     </button>
                                 </div>
+
+                                <div id="carouselExampleIndicators4-mobile" class="carousel slide mobile"
+                                    data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators4-mobile"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators4-mobile"
+                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-6 wrapper-agenda-item">
+                                                        <div class="local-data">
+                                                            <p class="data-evento">19 <span class="mes">nov</span></h1>
+                                                            <p class="evento-info"><b>São Paulo</b></p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="evento-info">Mentoria Palestra</p>
+                                                            <p class="evento-info">Motivacional</p>
+                                                            <p class="evento-info">Evento Presencial Palestra </p>
+                                                        </div>
+                                                        <div class="agenda-divisor"></div>
+                                                    </div>
+                                                    <div class="col-6 wrapper-agenda-item">
+                                                        <div class="local-data">
+                                                            <p class="data-evento">26 <span class="mes">nov</span></h1>
+                                                            <p class="evento-info"><b>Campinas</b></p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="evento-info">Mentoria Palestra</p>
+                                                            <p class="evento-info">Motivacional</p>
+                                                            <p class="evento-info">Evento Presencial Palestra </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-6 wrapper-agenda-item">
+                                                        <div class="local-data">
+                                                            <p class="data-evento">19 <span class="mes">nov</span></h1>
+                                                            <p class="evento-info"><b>São Paulo</b></p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="evento-info">Mentoria Palestra</p>
+                                                            <p class="evento-info">Motivacional</p>
+                                                            <p class="evento-info">Evento Presencial Palestra </p>
+                                                        </div>
+                                                        <div class="agenda-divisor"></div>
+                                                    </div>
+                                                    <div class="col-6 wrapper-agenda-item">
+                                                        <div class="local-data">
+                                                            <p class="data-evento">26 <span class="mes">nov</span></h1>
+                                                            <p class="evento-info"><b>Campinas</b></p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="evento-info">Mentoria Palestra</p>
+                                                            <p class="evento-info">Motivacional</p>
+                                                            <p class="evento-info">Evento Presencial Palestra </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleIndicators4-mobile" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Anterior</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleIndicators4-mobile" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Próximo</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <img src="assets/images/annah-5.png" class="img-fluid" alt="Annah">
+                <img src="assets/images/annah-5.png" class="img-fluid desktop" alt="Annah">
             </div>
         </div>
 
@@ -517,7 +810,7 @@
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <div class="row">
+                                <div class="row desktop">
                                     <div class="col-md-1"></div>
                                     <div class="col-md-2">
                                         <div class="evento-item">
@@ -626,9 +919,35 @@
                                     </div>
                                     <div class="col-md-1"></div>
                                 </div>
+
+                                <div class="row mobile">
+                                    <div class="container text-center">
+                                        <div class="col-12">
+                                            <div class="evento-item">
+                                                <img src="assets/images/annah-6.png" class="img-fluid" alt="Annah">
+
+                                                <div class="wrapper-btn-evento">
+                                                    <button type="button" class="btn btn-outline-light">BLOG</button>
+                                                </div>
+                                            </div>
+                                            <div class="infos-principais">
+                                                <p class="titulo">19 de nov. de 2021</p>
+                                                <p class="titulo-secundario">Por: Annah Paula</p>
+                                            </div>
+                                            <div>
+                                                <hr class="separador-evento" size="1">
+                                            </div>
+                                            <div>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                    diam nonummy nibh euismod
+                                                    tincidunt ut laoreet</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="row">
+                                <div class="row desktop">
                                     <div class="col-md-1"></div>
                                     <div class="col-md-2">
                                         <div class="evento-item">
@@ -673,6 +992,31 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="row mobile">
+                                    <div class="container text-center">
+                                        <div class="col-12">
+                                            <div class="evento-item">
+
+                                                <div class="wrapper-btn-evento">
+                                                    <button type="button" class="btn btn-outline-light">BLOG</button>
+                                                </div>
+                                                <img src="assets/images/annah-6.png" class="img-fluid" alt="Annah">
+                                            </div>
+                                            <div class="infos-principais">
+                                                <p class="titulo">19 de nov. de 2021</p>
+                                                <p class="titulo-secundario">Por: Annah Paula</p>
+                                            </div>
+                                            <div>
+                                                <hr class="separador-evento" size="1">
+                                            </div>
+                                            <div>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                    diam nonummy nibh euismod
+                                                    tincidunt ut laoreet</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators5"
@@ -713,18 +1057,20 @@
         <div id="wrapper-newsletter">
             <div class="container" style=" background-color: #FFFFFF;">
                 <div class="row">
-                    <div class="col-md-1" style="border-right: 1px solid rgb(231, 231, 231); padding: 0;">
-                        <span class="far fa-envelope fa-3x"></span>
-                    </div>
-                    <div class="col-md-5" style="padding: 20px;">
-                        <div>
-                            <h3 style="margin-bottom: 0; font-family: 'WorkSans'; font-weight: bold;">NEWSLETTER</h3>
-                            <h3 style="margin-bottom: 0; font-family: 'WorkSans'; font-weight: bold;">RECEBA MINHAS</h3>
-                            <h3 style="margin-bottom: 0; font-family: 'WorkSans'; font-weight: bold;">DICAS E NOVIDADES
-                            </h3>
+                    <div class="col-md-1 col-sm-2"
+                        style="border-right: 1px solid rgb(231, 231, 231); padding: 0; position: relative; min-height: 90px; border-bottom: 1px solid rgb(231, 231, 231);">
+                        <div class="centralizar-conteudo">
+                            <span class="far fa-envelope fa-2x"></span>
                         </div>
                     </div>
-                    <div class="col-md-6" style="padding: 20px;">
+                    <div class="col-sm-10 col-md-5" style="padding: 20px;">
+                        <div>
+                            <h3 class="titulo">NEWSLETTER</h3>
+                            <h3 class="titulo">RECEBA MINHAS</h3>
+                            <h3 class="titulo">DICAS E NOVIDADES</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6" style="padding: 20px;">
                         <form>
                             <div class="row">
                                 <div class="col-md-6">
@@ -746,11 +1092,54 @@
                 </div>
             </div>
         </div>
-        <div id="wrapper-menu-redes-sociais">
 
+        <div style="position: relative;">
+
+            <div style="position: absolute; width: 100%; background-color: #19191A; height: 250px; top:-250px">
+                <div id="wrapper-menu-redes-sociais">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                                    <div class="container-fluid">
+                                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                            <div class="navbar-nav">
+                                                <a class="nav-link" href="#">BIOGRAFIA</a>
+                                                <a class="nav-link" href="#">BUSINESS</a>
+                                                <a class="nav-link" href="#">CONTEÚDO</a>
+                                                <a class="nav-link" href="#">PODCASTS</a>
+                                                <a class="nav-link" href="#">VÍDEOS</a>
+                                                <a class="nav-link" href="#">EVENTOS</a>
+                                                <a class="nav-link" href="#">BLOG</a>
+                                                <a class="nav-link" href="#">CONTATO</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="col-md-4">
+                                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                                    <div class="container-fluid">
+                                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                            <div class="navbar-nav">
+                                                <a class="nav-link" href="#"><i class="fab fa-instagram gold"></i></a>
+                                                <a class="nav-link" href="#"><i class="fab fa-facebook-f gold"></i></a>
+                                                <a class="nav-link" href="#"><i class="fab fa-linkedin-in gold"></i></a>
+                                                <a class="nav-link" href="#"><i class="fab fa-twitter gold"></i></a>
+                                                <a class="nav-link" href="#"><i class="fab fa-youtube gold"></i></a>
+                                                <a class="nav-link" href="#"><i
+                                                        class="fab fa-telegram-plane gold"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
     <footer>
 
     </footer>
